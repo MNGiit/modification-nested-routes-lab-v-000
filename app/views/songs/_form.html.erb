@@ -1,4 +1,7 @@
 <%= form_for @song  do |f| %>
+  <!-- artist_select is new code to pass test -->
+  <%= artist_select(@song.artist, @song) %>
+  <!-- other lines of code was originally here -->
   <%= f.label :title %>
   <%= f.text_field :title %><br>
   <%= f.label :artist_name %>
